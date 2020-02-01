@@ -16,8 +16,15 @@ public class game : MonoBehaviour
     {
         
     }
-    void OnMouseDown()
+
+
+    public void start()
     {
         SceneManager.LoadScene("Game");
+
+    }
+    public void credits()
+    {
+
     }
 }
