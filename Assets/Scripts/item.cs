@@ -28,15 +28,18 @@ public class item : MonoBehaviour
             broken.GetComponent<spawn>().cont++;
             t.GetComponent<Image>().fillAmount = t.GetComponent<Image>().fillAmount + 0.2f;
 
-            Instantiate(ok, this.transform.position, Quaternion.identity);
+            
+            var oki= Instantiate(ok, this.transform.position, Quaternion.identity);
+            oki.transform.SetParent(transform);
+            oki.transform.localPosition = new Vector3(0, 0, -1);
 
-            transform.localPosition = new Vector3(0, 0, 0);
         }
         else
         {
             t.GetComponent<Image>().fillAmount = t.GetComponent<Image>().fillAmount - 0.2f;
-            Instantiate(cruz, this.transform.position, Quaternion.identity);
-
+            var cru=Instantiate(cruz, this.transform.position, Quaternion.identity);
+            cru.transform.SetParent(transform);
+            cru.transform.localPosition = new Vector3(0, 0, -1);
         }
 
         //Object.Destroy(this.gameObject);

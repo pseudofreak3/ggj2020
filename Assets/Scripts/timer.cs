@@ -8,6 +8,7 @@ public class timer : MonoBehaviour
 {
     private float con;
     float time;
+    public GameObject final;
     void Start()
     {
         con = 1;
@@ -21,7 +22,7 @@ public class timer : MonoBehaviour
         if (GetComponent<Image>().fillAmount==0)
         {
             SceneManager.LoadScene("Menu");
-
+            final.SetActive(true);
         }
     }
 }

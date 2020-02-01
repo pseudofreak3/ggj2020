@@ -12,6 +12,7 @@ public class spawn : MonoBehaviour
     public GameObject timer;
     public GameObject oki;
     public GameObject cru;
+    public GameObject final;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,7 @@ public class spawn : MonoBehaviour
         {
             Object.Destroy(this.gameObject);
             Time.timeScale = 0;
+            final.SetActive(true);
         }
     }
 }
