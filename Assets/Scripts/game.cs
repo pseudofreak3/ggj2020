@@ -25,7 +25,7 @@ public class game : MonoBehaviour
     }
     public void credits()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Credits");
     }
     public void menu()
     {
