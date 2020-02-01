@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d4c755fe4d70a47813ae6b6e869290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  click: 0
+  click: 1
   broken: {fileID: 0}
   t: {fileID: 0}
   ok: {fileID: 9010112773519907750, guid: 51193ded25f68554a8dfed65ee1d0602, type: 3}
