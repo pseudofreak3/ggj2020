@@ -21,6 +21,7 @@ public class game : MonoBehaviour
     public void start()
     {
         SceneManager.LoadScene("Game");
+       
 
     }
     public void credits()
