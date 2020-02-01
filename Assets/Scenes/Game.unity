@@ -917,7 +917,7 @@ MonoBehaviour:
   timer: {fileID: 370299349}
   oki: {fileID: 9010112773519907750, guid: 51193ded25f68554a8dfed65ee1d0602, type: 3}
   cru: {fileID: 6986974388816733542, guid: 8903be4c109ef6646b0166103cf4e964, type: 3}
-  final: {fileID: 522910607}
+  final: {fileID: 1998878911}
 --- !u!1 &871662941
 GameObject:
   m_ObjectHideFlags: 0
