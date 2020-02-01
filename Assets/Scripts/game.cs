@@ -25,6 +25,12 @@ public class game : MonoBehaviour
     }
     public void credits()
     {
-
+        SceneManager.LoadScene("Game");
     }
+    public void menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+
 }
