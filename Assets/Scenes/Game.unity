@@ -913,6 +913,8 @@ MonoBehaviour:
   - {fileID: 942772340}
   - {fileID: 1569831127}
   timer: {fileID: 370299349}
+  oki: {fileID: 9010112773519907750, guid: 51193ded25f68554a8dfed65ee1d0602, type: 3}
+  cru: {fileID: 6986974388816733542, guid: 8903be4c109ef6646b0166103cf4e964, type: 3}
 --- !u!1 &871662941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,6 +2123,18 @@ PrefabInstance:
       propertyPath: t
       value: 
       objectReference: {fileID: 370299349}
+    - target: {fileID: 5426219379960214528, guid: a240dfe7e58dabb4fa2647fe1633a6ae,
+        type: 3}
+      propertyPath: ok
+      value: 
+      objectReference: {fileID: 9010112773519907750, guid: 51193ded25f68554a8dfed65ee1d0602,
+        type: 3}
+    - target: {fileID: 5426219379960214528, guid: a240dfe7e58dabb4fa2647fe1633a6ae,
+        type: 3}
+      propertyPath: cruz
+      value: 
+      objectReference: {fileID: 6986974388816733542, guid: 8903be4c109ef6646b0166103cf4e964,
+        type: 3}
     - target: {fileID: 5426219379960214530, guid: a240dfe7e58dabb4fa2647fe1633a6ae,
         type: 3}
       propertyPath: m_Name
@@ -2260,6 +2274,18 @@ PrefabInstance:
       propertyPath: t
       value: 
       objectReference: {fileID: 370299349}
+    - target: {fileID: 7722373007740494245, guid: 08be4ad143d749540bde9aad80b850e2,
+        type: 3}
+      propertyPath: ok
+      value: 
+      objectReference: {fileID: 9010112773519907750, guid: 51193ded25f68554a8dfed65ee1d0602,
+        type: 3}
+    - target: {fileID: 7722373007740494245, guid: 08be4ad143d749540bde9aad80b850e2,
+        type: 3}
+      propertyPath: cruz
+      value: 
+      objectReference: {fileID: 6986974388816733542, guid: 8903be4c109ef6646b0166103cf4e964,
+        type: 3}
     - target: {fileID: 7722373007740494267, guid: 08be4ad143d749540bde9aad80b850e2,
         type: 3}
       propertyPath: m_Name
@@ -2289,6 +2315,18 @@ PrefabInstance:
       propertyPath: t
       value: 
       objectReference: {fileID: 370299349}
+    - target: {fileID: 7853571561289836840, guid: 21140f2444ac5344680a5c65c922738d,
+        type: 3}
+      propertyPath: ok
+      value: 
+      objectReference: {fileID: 9010112773519907750, guid: 51193ded25f68554a8dfed65ee1d0602,
+        type: 3}
+    - target: {fileID: 7853571561289836840, guid: 21140f2444ac5344680a5c65c922738d,
+        type: 3}
+      propertyPath: cruz
+      value: 
+      objectReference: {fileID: 6986974388816733542, guid: 8903be4c109ef6646b0166103cf4e964,
+        type: 3}
     - target: {fileID: 7853571561289836841, guid: 21140f2444ac5344680a5c65c922738d,
         type: 3}
       propertyPath: m_LocalPosition.x

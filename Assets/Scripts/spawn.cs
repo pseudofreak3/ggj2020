@@ -10,6 +10,8 @@ public class spawn : MonoBehaviour
 
     public Transform[] pos;
     public GameObject timer;
+    public GameObject oki;
+    public GameObject cru;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,8 @@ public class spawn : MonoBehaviour
 
             ch1.broken = gameObject;
             ch1.t = timer;
+            ch1.ok = oki;
+            ch1.cruz = cru;
         }
     }
 
