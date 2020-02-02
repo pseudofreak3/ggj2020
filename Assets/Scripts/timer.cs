@@ -21,7 +21,7 @@ public class timer : MonoBehaviour
         GetComponent<Image>().fillAmount = GetComponent<Image>().fillAmount - (Time.deltaTime/10);
         if (GetComponent<Image>().fillAmount==0)
         {
-            SceneManager.LoadScene("Menu");
+            //SceneManager.LoadScene("Menu");
             final.SetActive(true);
         }
     }
