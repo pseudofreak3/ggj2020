@@ -60,7 +60,7 @@ public class CinematicaScript : MonoBehaviour
 
         }
         yield return new WaitForSecondsRealtime(lastTime);
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("Animation");
     }
 
 }

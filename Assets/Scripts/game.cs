@@ -32,6 +32,14 @@ public class game : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+    public void cinematic()
+    {
+        SceneManager.LoadScene("Cinematic");
+    }
+    public void anima()
+    {
+        SceneManager.LoadScene("Animation");
+    }
 
 
 }

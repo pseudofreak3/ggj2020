@@ -9,6 +9,7 @@ public class timer : MonoBehaviour
     private float con;
     float time;
     public GameObject final;
+    bool fin=true;
     void Start()
     {
         con = 1;
@@ -19,10 +20,11 @@ public class timer : MonoBehaviour
     {
         time +=con* Time.deltaTime;
         GetComponent<Image>().fillAmount = GetComponent<Image>().fillAmount - (Time.deltaTime/10);
-        if (GetComponent<Image>().fillAmount==0)
+        if (GetComponent<Image>().fillAmount==0 && fin)
         {
             //SceneManager.LoadScene("Menu");
             final.SetActive(true);
+            fin = false;
         }
     }
 }
