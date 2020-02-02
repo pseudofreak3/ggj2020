@@ -60,7 +60,6 @@ public class spawn : MonoBehaviour
             fin = false;
             //Object.Destroy(this.gameObject);
             Time.timeScale = 0;
-            // final.SetActive(true);
             StartCoroutine(gameRoutine());
             
         }
