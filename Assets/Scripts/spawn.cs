@@ -55,12 +55,12 @@ public class spawn : MonoBehaviour
 
         if (cont>=3 && fin)
         {
-
+            b4.SetActive(true);
             fin = false;
             Object.Destroy(this.gameObject);
             Time.timeScale = 0;
             final.SetActive(true);
-            b4.SetActive(true);
+            
 
         }
     }
