@@ -13,7 +13,14 @@ public class spawn : MonoBehaviour
     public GameObject oki;
     public GameObject cru;
     public GameObject final;
-    bool fin=true; 
+    public GameObject b1;
+    public GameObject b2;
+    public GameObject b3;
+    public GameObject b4;
+
+
+
+    bool fin =true; 
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +42,10 @@ public class spawn : MonoBehaviour
             ch1.t = timer;
             ch1.ok = oki;
             ch1.cruz = cru;
+            ch1.a1 = b1;
+            ch1.a2 = b2;
+            ch1.a3 = b3;
+
         }
     }
 
@@ -44,10 +55,13 @@ public class spawn : MonoBehaviour
 
         if (cont>=3 && fin)
         {
+
             fin = false;
             Object.Destroy(this.gameObject);
             Time.timeScale = 0;
             final.SetActive(true);
+            b4.SetActive(true);
+
         }
     }
 }
