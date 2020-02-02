@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class spawn : MonoBehaviour
 {
@@ -57,11 +58,19 @@ public class spawn : MonoBehaviour
         {
             b4.SetActive(true);
             fin = false;
-            Object.Destroy(this.gameObject);
+            //Object.Destroy(this.gameObject);
             Time.timeScale = 0;
-            final.SetActive(true);
+            // final.SetActive(true);
+            StartCoroutine(gameRoutine());
             
-
         }
     }
+
+    private IEnumerator gameRoutine()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        SceneManager.LoadScene("Goodend");
+
+    }
+
 }

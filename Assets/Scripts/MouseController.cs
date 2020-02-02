@@ -21,28 +21,31 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = Input.mousePosition;
-        pos.z = z;
-        transform.position = pos;
+
+            Vector3 pos = Input.mousePosition;
+            pos.z = z;
+            transform.position = pos;
 
 
-        Vector3 scale = initialScale;
-        if (Input.GetMouseButton(0))
-        {
-            scale = clickedScale;
-        }
-        if (Input.GetMouseButtonDown(0)) {
-            t = 0;
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            t = 0;
-        }
-        t +=Time.deltaTime *speedsize;
-        // transform.localScale = scale;
+            Vector3 scale = initialScale;
+            if (Input.GetMouseButton(0))
+            {
+                scale = clickedScale;
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                t = 0;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                t = 0;
+            }
+            t += Time.deltaTime * speedsize;
+            // transform.localScale = scale;
 
-        desired = scale;
-        current = Vector3.Lerp(current, desired, t);
-        transform.localScale = current;
+            desired = scale;
+            current = Vector3.Lerp(current, desired, t);
+            transform.localScale = current;
+        
     }
 }

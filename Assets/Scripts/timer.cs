@@ -22,9 +22,17 @@ public class timer : MonoBehaviour
         GetComponent<Image>().fillAmount = GetComponent<Image>().fillAmount - (Time.deltaTime/10);
         if (GetComponent<Image>().fillAmount==0 && fin)
         {
-            //SceneManager.LoadScene("Menu");
-            final.SetActive(true);
+            //SceneManager.LoadScene("Menu");            
             fin = false;
+            StartCoroutine(endRoutine());
+
         }
+    }
+
+    private IEnumerator endRoutine()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene("Badend");
+
     }
 }
