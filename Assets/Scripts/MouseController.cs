@@ -13,9 +13,7 @@ public class MouseController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       z = transform.position.z;
-        initialScale = transform.localScale;
-        clickedScale = initialScale * 0.75f;
+        init();
     }
 
     // Update is called once per frame
@@ -47,5 +45,17 @@ public class MouseController : MonoBehaviour
             current = Vector3.Lerp(current, desired, t);
             transform.localScale = current;
         
+    }
+    private void OnEnable()
+    {
+        init();
+    }
+        private void init()
+    {
+        t = 0;
+        z = transform.position.z;
+        initialScale = transform.localScale;
+        clickedScale = initialScale * 0.75f;
+        current = transform.localScale;
     }
 }
