@@ -130,3 +130,4 @@ MonoBehaviour:
   a2: {fileID: 0}
   a3: {fileID: 0}
   tipo: 2
+  particula: {fileID: 19859762, guid: 92741d35de61d3548a1a78f80df11ce9, type: 3}

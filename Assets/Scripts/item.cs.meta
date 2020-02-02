@@ -3,7 +3,15 @@ guid: 77d4c755fe4d70a47813ae6b6e869290
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - broken: {instanceID: 0}
+  - t: {instanceID: 0}
+  - ok: {instanceID: 0}
+  - cruz: {instanceID: 0}
+  - a1: {instanceID: 0}
+  - a2: {instanceID: 0}
+  - a3: {instanceID: 0}
+  - particula: {fileID: 19859762, guid: 92741d35de61d3548a1a78f80df11ce9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

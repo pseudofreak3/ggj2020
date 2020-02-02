@@ -10,6 +10,8 @@ public class timer : MonoBehaviour
     float time;
     public GameObject final;
     bool fin=true;
+    public facing facing;
+
     void Start()
     {
         con = 1;
@@ -31,7 +33,8 @@ public class timer : MonoBehaviour
 
     private IEnumerator endRoutine()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        facing.effect = true;
+        yield return new WaitForSecondsRealtime(2f);
         SceneManager.LoadScene("Badend");
 
     }

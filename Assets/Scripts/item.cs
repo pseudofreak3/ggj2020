@@ -14,18 +14,12 @@ public class item : MonoBehaviour
     public GameObject a2;
     public GameObject a3;
     public int tipo;
-
+    public ParticleSystem particula;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     void OnMouseDown()
     {
         if (click)
@@ -34,12 +28,14 @@ public class item : MonoBehaviour
             t.GetComponent<Image>().fillAmount = t.GetComponent<Image>().fillAmount + 0.2f;
 
             GetComponent<Collider2D>().enabled = false;
-            var oki= Instantiate(ok, this.transform.position, Quaternion.identity);
+            var oki = Instantiate(ok, this.transform.position, Quaternion.identity);
             oki.transform.SetParent(transform);
             oki.transform.localPosition = new Vector3(0, 0, -1);
-            if (tipo==1)
+            if (tipo == 1)
             {
                 a1.SetActive(true);
+
+
             }
             if (tipo == 2)
             {
@@ -49,6 +45,11 @@ public class item : MonoBehaviour
             {
                 a3.SetActive(true);
             }
+            if (tipo > 0 && tipo < 4) {
+                var partP = Instantiate(particula);
+                partP.Play();
+                partP.transform.position = transform.position;
+            } 
         }
         else
         {

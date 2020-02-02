@@ -18,6 +18,8 @@ public class spawn : MonoBehaviour
     public GameObject b2;
     public GameObject b3;
     public GameObject b4;
+    public facing facing;
+
 
 
 
@@ -26,7 +28,9 @@ public class spawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < pos.Length; i++)
+        timer.GetComponent<timer>().enabled = true;
+
+        for (int i = 0; i < pos.Length; i++)
         {
             int p = 0;
             while (posb.Contains(p))
@@ -59,15 +63,18 @@ public class spawn : MonoBehaviour
             b4.SetActive(true);
             fin = false;
             //Object.Destroy(this.gameObject);
-            Time.timeScale = 0;
+            timer.GetComponent<timer>().enabled = false;
             StartCoroutine(gameRoutine());
+
             
         }
     }
 
     private IEnumerator gameRoutine()
     {
-        yield return new WaitForSecondsRealtime(1);
+        facing.effect = true;
+        yield return new WaitForSecondsRealtime(2);
+
         SceneManager.LoadScene("Goodend");
 
     }
